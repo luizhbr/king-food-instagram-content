@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>King Food — Screenshot Mode</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #1A1A1A;
+    --bg-alt: #232323;
+    --yellow: #FFD100;
+    --white: #FFFFFF;
+    --gray: #888888;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0D0D0D;
+  }
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 90px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .slide-num {
+    position: absolute;
+    top: 60px;
+    right: 70px;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--gray);
+    letter-spacing: 1px;
+  }
+  .slide-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.15;
+    color: var(--white);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+  }
+  .slide-title .highlight { color: var(--yellow); }
+  .slide-body {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #CCCCCC;
+    max-width: 750px;
+  }
+  .slide-body strong { color: var(--yellow); font-weight: 700; }
+  .slide-cta {
+    margin-top: 50px;
+    padding: 24px 56px;
+    background: var(--yellow);
+    color: var(--bg);
+    font-weight: 800;
+    font-size: 28px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .slide-logo {
+    position: absolute;
+    bottom: 60px;
+    left: 70px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gray);
+    letter-spacing: 2px;
+  }
+  .slide-logo .kf-yellow { color: var(--yellow); }
+  .slide-bg-purple { background: linear-gradient(160deg, #1A1A1A 0%, #1a1028 100%); }
+  .slide-bg-warm { background: linear-gradient(135deg, #1A1A1A 0%, #2a2010 100%); }
+  .slide-bg-green { background: linear-gradient(135deg, #1A1A1A 0%, #0a1a10 100%); }
+  .slide-bg-gray { background: linear-gradient(135deg, #1A1A1A 0%, #252525 100%); }
+  .slide-bg-photo { background: linear-gradient(135deg, #1A1A1A 0%, #2a1a0a 100%); }
+  .slide-bg-yellow { background: var(--yellow); }
+  .slide-bg-yellow .slide-title,
+  .slide-bg-yellow .slide-body,
+  .slide-bg-yellow .slide-body strong,
+  .slide-bg-yellow .slide-num,
+  .slide-bg-yellow .slide-logo { color: var(--bg); }
+  .slide-bg-yellow .slide-cta { background: var(--bg); color: var(--yellow); }
+  .slide-bg-yellow .slide-logo .kf-yellow { color: var(--bg); }
+  .slide-emoji-row {
+    font-size: 72px;
+    margin-bottom: 32px;
+    letter-spacing: 8px;
+  }
+  .slide-badge {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 3px solid var(--yellow);
+    color: var(--yellow);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  .slide-number-big {
+    font-size: 160px;
+    font-weight: 900;
+    color: var(--yellow);
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+  .divider {
+    width: 120px;
+    height: 6px;
+    background: var(--yellow);
+    margin: 32px auto;
+  }
+  .slide-bg-yellow .divider { background: var(--bg); }
+  .page-break { page-break-after: always; }
+</style>
+</head>
+<body>
+
+<!-- POST 01 — 5 Motivos para Pedir Açaí Hoje — 7 slides -->
+<div class="slide slide-bg-purple" id="p01-s01">
+  <span class="slide-num">1/7</span>
+  <div class="slide-emoji-row">🥣</div>
+  <div class="slide-title">5 MOTIVOS<br>PARA PEDIR<br><span class="highlight">AÇAÍ HOJE</span></div>
+  <div class="divider"></div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p01-s02">
+  <span class="slide-num">2/7</span>
+  <div class="slide-number-big">01</div>
+  <div class="slide-title">ENERGIA<br>DE VERDADE</div>
+  <div class="slide-body">Açaí batido na hora, sem xarope, sem pó. Só fruta de verdade pra te dar aquele gás.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p01-s03">
+  <span class="slide-num">3/7</span>
+  <div class="slide-number-big">02</div>
+  <div class="slide-title">ANTIOXIDANTES<br>NATURAIS</div>
+  <div class="slide-body">Rico em antioxidantes que seu corpo agradece. Sabor que faz bem — e não é coincidência.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p01-s04">
+  <span class="slide-num">4/7</span>
+  <div class="slide-number-big">03</div>
+  <div class="slide-title">COMBO PERFEITO<br>COM GRANOLA</div>
+  <div class="slide-body">Crocância em cada colherada. Açaí + granola = match feito no céu.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p01-s05">
+  <span class="slide-num">5/7</span>
+  <div class="slide-number-big">04</div>
+  <div class="slide-title">DIRETO DO PARÁ<br>PARA COLUMBUS</div>
+  <div class="slide-body">Polpa importada direto da Amazônia. O sabor de lá, servido aqui.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p01-s06">
+  <span class="slide-num">6/7</span>
+  <div class="slide-number-big">05</div>
+  <div class="slide-title">CAI BEM<br>A QUALQUER HORA</div>
+  <div class="slide-body">Café da manhã, pós-treino, sobremesa, meia-noite. Açaí não tem horário.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-yellow" id="p01-s07">
+  <span class="slide-num">7/7</span>
+  <div class="slide-title">BORA PEDIR?</div>
+  <div class="slide-emoji-row">👇</div>
+  <span class="slide-cta">kingfood.online</span>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+
+<!-- POST 02 — Nosso Cardápio em 6 Pratos — 8 slides -->
+<div class="slide slide-bg-photo" id="p02-s01">
+  <span class="slide-num">1/8</span>
+  <div class="slide-emoji-row">🍽️</div>
+  <div class="slide-title">NOSSO CARDÁPIO<br>EM <span class="highlight">6 PRATOS</span></div>
+  <div class="divider"></div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p02-s02">
+  <span class="slide-num">2/8</span>
+  <div class="slide-emoji-row">🧀</div>
+  <div class="slide-title">PÃO DE QUEIJO</div>
+  <div class="slide-body">Crocante por fora, macio por dentro. Feito na hora, sempre.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p02-s03">
+  <span class="slide-num">3/8</span>
+  <div class="slide-emoji-row">🍗</div>
+  <div class="slide-title">COXINHA</div>
+  <div class="slide-body">Frango cremoso, empanada na hora. O recheio estica na primeira mordida.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p02-s04">
+  <span class="slide-num">4/8</span>
+  <div class="slide-emoji-row">🍔</div>
+  <div class="slide-title">X-SALADA BRASIL</div>
+  <div class="slide-body">O lanche que lembra casa. Pão na chapa, carne suculenta, queijo derretendo.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p02-s05">
+  <span class="slide-num">5/8</span>
+  <div class="slide-emoji-row">🫐</div>
+  <div class="slide-title">AÇAÍ TIGELA</div>
+  <div class="slide-body">Direto do Pará, toppings à escolha. Granola, banana, leite condensado — você monta.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-green" id="p02-s06">
+  <span class="slide-num">6/8</span>
+  <div class="slide-emoji-row">🥘</div>
+  <div class="slide-title">FRANGO XADREZ</div>
+  <div class="slide-body">Tempero na medida. Frango macio, legumes crocantes, molho brilhante.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p02-s07">
+  <span class="slide-num">7/8</span>
+  <div class="slide-emoji-row">🥤</div>
+  <div class="slide-title">MILKSHAKE DE AÇAÍ</div>
+  <div class="slide-body">Cremoso, refrescante. O fechamento perfeito pra qualquer refeição.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-yellow" id="p02-s08">
+  <span class="slide-num">8/8</span>
+  <div class="slide-title">TUDO ISSO A UM<br>TOQUE DE DISTÂNCIA</div>
+  <div class="slide-emoji-row">👆</div>
+  <span class="slide-cta">kingfood.online</span>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+
+<!-- POST 03 — De Onde Vem o Pão de Queijo — 6 slides -->
+<div class="slide slide-bg-warm" id="p03-s01">
+  <span class="slide-num">1/6</span>
+  <div class="slide-emoji-row">🧀</div>
+  <div class="slide-title">DE ONDE VEM<br>O <span class="highlight">PÃO DE QUEIJO?</span></div>
+  <div class="divider"></div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p03-s02">
+  <span class="slide-num">2/6</span>
+  <div class="slide-title">TUDO COMEÇA<br>COM O <span class="highlight">POLVILHO</span></div>
+  <div class="slide-body">Farinha de mandioca, ingrediente base da culinária brasileira. Simples, antigo, perfeito.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p03-s03">
+  <span class="slide-num">3/6</span>
+  <div class="slide-title">MISTURADO COM<br><span class="highlight">QUEIJO, OVOS E LEITE</span></div>
+  <div class="slide-body">A massa certa não tem segredo. Tem proporção. E mão de quem faz todo dia.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p03-s04">
+  <span class="slide-num">4/6</span>
+  <div class="slide-title">O FORNO FAZ<br>A <span class="highlight">MÁGICA</span></div>
+  <div class="slide-body">Crosta dourada por fora. Interior macio, que puxa quando você abre. É assim que tem que ser.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p03-s05">
+  <span class="slide-num">5/6</span>
+  <div class="slide-title">CROCANTE POR FORA,<br>MACIO POR DENTRO</div>
+  <div class="slide-body">É isso que separa um pão de queijo de verdade de uma imitação. A textura não mente.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-yellow" id="p03-s06">
+  <span class="slide-num">6/6</span>
+  <div class="slide-title">E VOCÊ,<br>PREFERE PURO<br>OU COM RECHEIO?</div>
+  <div class="slide-emoji-row">👇</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+
+<!-- POST 04 — Como Montar Seu Açaí Perfeito — 6 slides -->
+<div class="slide slide-bg-purple" id="p04-s01">
+  <span class="slide-num">1/6</span>
+  <div class="slide-emoji-row">🫐</div>
+  <div class="slide-title">COMO MONTAR<br>SEU <span class="highlight">AÇAÍ PERFEITO</span></div>
+  <div class="divider"></div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p04-s02">
+  <span class="slide-num">2/6</span>
+  <div class="slide-badge">PASSO 01</div>
+  <div class="slide-title">A BASE</div>
+  <div class="slide-body">Açaí cremoso, nem muito duro nem mole. O ponto certo faz toda diferença.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p04-s03">
+  <span class="slide-num">3/6</span>
+  <div class="slide-badge">PASSO 02</div>
+  <div class="slide-title">A GRANOLA</div>
+  <div class="slide-body">Crocância em cada colherada. Sem granola, não é açaí — é tristeza.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p04-s04">
+  <span class="slide-num">4/6</span>
+  <div class="slide-badge">PASSO 03</div>
+  <div class="slide-title">AS FRUTAS</div>
+  <div class="slide-body">Banana, morango, ou os dois. Frescas, no ponto, pra contrastar com o frio do açaí.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p04-s05">
+  <span class="slide-num">5/6</span>
+  <div class="slide-badge">PASSO 04</div>
+  <div class="slide-title">O TOQUE FINAL</div>
+  <div class="slide-body">Leite condensado ou mel. Aquele fio dourado que fecha com estilo.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-yellow" id="p04-s06">
+  <span class="slide-num">6/6</span>
+  <div class="slide-title">PRONTO.<br>BORA PEDIR O SEU?</div>
+  <div class="slide-emoji-row">🥣</div>
+  <span class="slide-cta">kingfood.online</span>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+
+<!-- POST 05 — POV: Sexta à Noite em Columbus — 5 slides -->
+<div class="slide slide-bg-gray" id="p05-s01">
+  <span class="slide-num">1/5</span>
+  <div class="slide-emoji-row">🌃</div>
+  <div class="slide-title">POV:<br>SEXTA À NOITE<br><span class="highlight">EM COLUMBUS</span></div>
+  <div class="divider"></div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-gray" id="p05-s02">
+  <span class="slide-num">2/5</span>
+  <div class="slide-title">BATEU AQUELA<br>VONTADE DE<br><span class="highlight">COMIDA BRASILEIRA</span></div>
+  <div class="slide-body">Não é fome. É saudade. E a saudade tem nome: pão de queijo, coxinha, X-Salada...</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-gray" id="p05-s03">
+  <span class="slide-num">3/5</span>
+  <div class="slide-title">VOCÊ ABRE E...</div>
+  <div class="slide-emoji-row">📦</div>
+  <div class="slide-body">O vapor sobe da embalagem. O cheiro te levou direto pro Brasil.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p05-s04">
+  <span class="slide-num">4/5</span>
+  <div class="slide-title">É O <span class="highlight">X-SALADA BRASIL</span><br>QUE VOCÊ TAVA<br>ESPERANDO</div>
+  <div class="slide-body">Pão na chapa. Carne suculenta. Queijo derretendo. Tudo no ponto.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-yellow" id="p05-s05">
+  <span class="slide-num">5/5</span>
+  <div class="slide-title">SEXTA TEM QUE<br>SER ASSIM</div>
+  <div class="slide-emoji-row">👇</div>
+  <span class="slide-cta">kingfood.online</span>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+
+<!-- POST 06 — Açaí: Do Pará para o Mundo — 7 slides -->
+<div class="slide slide-bg-purple" id="p06-s01">
+  <span class="slide-num">1/7</span>
+  <div class="slide-emoji-row">🌿</div>
+  <div class="slide-title">AÇAÍ:<br>DO <span class="highlight">PARÁ</span> PARA<br>O MUNDO</div>
+  <div class="divider"></div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-green" id="p06-s02">
+  <span class="slide-num">2/7</span>
+  <div class="slide-title">NASCE NA<br><span class="highlight">FLORESTA</span><br>AMAZÔNICA</div>
+  <div class="slide-body">O açaí é fruto de uma palmeira que cresce na maior floresta tropical do planeta.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-green" id="p06-s03">
+  <span class="slide-num">3/7</span>
+  <div class="slide-title">COLHIDO POR<br><span class="highlight">COMUNIDADES</span><br>RIBEIRINHAS</div>
+  <div class="slide-body">Famílias que vivem do rio, que conhecem o tempo certo de cada cacho. Tradição que passa de geração em geração.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p06-s04">
+  <span class="slide-num">4/7</span>
+  <div class="slide-title">CONGELADO PARA<br>MANTER A<br><span class="highlight">POTÊNCIA</span></div>
+  <div class="slide-body">A polpa é congelada horas depois da colheita. É assim que o sabor e os nutrientes chegam inteiros.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p06-s05">
+  <span class="slide-num">5/7</span>
+  <div class="slide-title">BATIDO NA HORA<br><span class="highlight">SEM XAROPE</span></div>
+  <div class="slide-body">Aqui não tem atalho. Polpa + liquidificador = açaí de verdade. Cor roxa, sabor intenso.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p06-s06">
+  <span class="slide-num">6/7</span>
+  <div class="slide-title">MONTADO COM<br>TOPPINGS QUE<br><span class="highlight">VOCÊ ESCOLHE</span></div>
+  <div class="slide-body">Granola, banana, morango, leite condensado. A tigela é sua. A gente só prepara a base.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-yellow" id="p06-s07">
+  <span class="slide-num">7/7</span>
+  <div class="slide-title">DO PARÁ PARA<br>COLUMBUS.<br>DIRETO.</div>
+  <div class="slide-emoji-row">👇</div>
+  <span class="slide-cta">kingfood.online</span>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+
+<!-- POST 07 — 3 Combos — 5 slides -->
+<div class="slide slide-bg-photo" id="p07-s01">
+  <span class="slide-num">1/5</span>
+  <div class="slide-emoji-row">🇧🇷</div>
+  <div class="slide-title">3 COMBOS QUE TODO<br><span class="highlight">BRASILEIRO EM COLUMBUS</span><br>PRECISA</div>
+  <div class="divider"></div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p07-s02">
+  <span class="slide-num">2/5</span>
+  <div class="slide-number-big">01</div>
+  <div class="slide-title">PÃO DE QUEIJO<br>+ CAFÉ</div>
+  <div class="slide-body">O café da manhã brasileiro perfeito. Crocante, quentinho, com aquele café fortinho.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p07-s03">
+  <span class="slide-num">3/5</span>
+  <div class="slide-number-big">02</div>
+  <div class="slide-title">AÇAÍ + GRANOLA<br><span class="highlight">PÓS-TREINO</span></div>
+  <div class="slide-body">Recompensa que faz bem. Energia, sabor, e aquela sensação de que o treino valeu.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p07-s04">
+  <span class="slide-num">4/5</span>
+  <div class="slide-number-big">03</div>
+  <div class="slide-title">X-SALADA<br>+ COCA LATA</div>
+  <div class="slide-body">O clássico que nunca falha. Lanche na chapa, Coca gelada. Sexta resolvida.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-yellow" id="p07-s05">
+  <span class="slide-num">5/5</span>
+  <div class="slide-title">QUAL É O SEU?</div>
+  <div class="slide-emoji-row">👇</div>
+  <span class="slide-cta">kingfood.online</span>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+
+<!-- POST 08 — BTS Cozinha — 6 slides -->
+<div class="slide slide-bg-gray" id="p08-s01">
+  <span class="slide-num">1/6</span>
+  <div class="slide-emoji-row">👨‍🍳</div>
+  <div class="slide-title">UM DIA NA<br>COZINHA DO<br><span class="highlight">KING FOOD</span></div>
+  <div class="divider"></div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p08-s02">
+  <span class="slide-num">2/6</span>
+  <div class="slide-badge">6h DA MANHÃ</div>
+  <div class="slide-title">O PREP COMEÇA</div>
+  <div class="slide-body">Massa do pão de queijo sendo feita. Mãos na massa, literalmente. Todo dia começa assim.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p08-s03">
+  <span class="slide-num">3/6</span>
+  <div class="slide-badge">8h</div>
+  <div class="slide-title">PRIMEIRO<br>LOTE NO FORNO</div>
+  <div class="slide-body">O cheiro toma conta da cozinha. Dourando no ponto, crosta perfeita.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p08-s04">
+  <span class="slide-num">4/6</span>
+  <div class="slide-badge">10h</div>
+  <div class="slide-title">AÇAÍ BATIDO<br>FRESCO</div>
+  <div class="slide-body">Polpa congelada + liquidificador. Cor roxa intensa, textura cremosa. Sem atalho.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-gray" id="p08-s05">
+  <span class="slide-num">5/6</span>
+  <div class="slide-badge">12h</div>
+  <div class="slide-title">PRIMEIRO<br>PEDIDO SAI</div>
+  <div class="slide-body">Sacola fechada, caminho do cliente. É aqui que o trabalho faz sentido.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-yellow" id="p08-s06">
+  <span class="slide-num">6/6</span>
+  <div class="slide-title">TUDO FEITO<br>NA HORA,<br>TODO DIA.</div>
+  <div class="slide-emoji-row">👇</div>
+  <span class="slide-cta">kingfood.online</span>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+
+<!-- POST 09 — Coxinha — 5 slides -->
+<div class="slide slide-bg-warm" id="p09-s01">
+  <span class="slide-num">1/5</span>
+  <div class="slide-emoji-row">🍗</div>
+  <div class="slide-title">COXINHA:<br>O EFEITO QUE VOCÊ<br><span class="highlight">NÃO ESPERAVA</span></div>
+  <div class="divider"></div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p09-s02">
+  <span class="slide-num">2/5</span>
+  <div class="slide-title">POR FORA:<br><span class="highlight">CROCÂNCIA</span><br>PERFEITA</div>
+  <div class="slide-body">Aquele som quando você quebra. É a casca que faz a coxinha ser coxinha.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p09-s03">
+  <span class="slide-num">3/5</span>
+  <div class="slide-title">POR DENTRO:<br>FRANGO CREMOSO<br><span class="highlight">TEMPERO NA MEDIDA</span></div>
+  <div class="slide-body">Recheio que não é seco, não é enjoativo. É o ponto certo. E o ponto certo não é sorte.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p09-s04">
+  <span class="slide-num">4/5</span>
+  <div class="slide-title">E O RECHEIO?<br><span class="highlight">ESTICA.</span></div>
+  <div class="slide-emoji-row">🧀</div>
+  <div class="slide-body">É nesse momento que a gente sabe: você entendeu o que é uma coxinha de verdade.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-yellow" id="p09-s05">
+  <span class="slide-num">5/5</span>
+  <div class="slide-title">SÓ PROVANDO<br>PRA ENTENDER.</div>
+  <div class="slide-emoji-row">👇</div>
+  <span class="slide-cta">kingfood.online</span>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+
+<!-- POST 10 — Cardápio da Semana — 8 slides -->
+<div class="slide slide-bg-photo" id="p10-s01">
+  <span class="slide-num">1/8</span>
+  <div class="slide-emoji-row">📅</div>
+  <div class="slide-title">SEU CARDÁPIO<br><span class="highlight">DA SEMANA</span></div>
+  <div class="divider"></div>
+  <div class="slide-body">Salva esse post. A gente pensou em tudo pra você.</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p10-s02">
+  <span class="slide-num">2/8</span>
+  <div class="slide-badge">SEGUNDA</div>
+  <div class="slide-title">PÃO DE QUEIJO<br>PRA COMEÇAR BEM</div>
+  <div class="slide-emoji-row">🧀</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-green" id="p10-s03">
+  <span class="slide-num">3/8</span>
+  <div class="slide-badge">TERÇA</div>
+  <div class="slide-title">FRANGO XADREZ<br>TEMPERO NA MEDIDA</div>
+  <div class="slide-emoji-row">🥘</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p10-s04">
+  <span class="slide-num">4/8</span>
+  <div class="slide-badge">QUARTA</div>
+  <div class="slide-title">AÇAÍ<br>MEIO DA SEMANA</div>
+  <div class="slide-emoji-row">🫐</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p10-s05">
+  <span class="slide-num">5/8</span>
+  <div class="slide-badge">QUINTA</div>
+  <div class="slide-title">COXINHA<br>PRA DAR AQUELE UP</div>
+  <div class="slide-emoji-row">🍗</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-warm" id="p10-s06">
+  <span class="slide-num">6/8</span>
+  <div class="slide-badge">SEXTA</div>
+  <div class="slide-title">X-SALADA BRASIL<br>SEM EXCEÇÃO</div>
+  <div class="slide-emoji-row">🍔</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-purple" id="p10-s07">
+  <span class="slide-num">7/8</span>
+  <div class="slide-badge">SÁBADO</div>
+  <div class="slide-title">MILKSHAKE DE AÇAÍ<br>PRO REFRESCANTE</div>
+  <div class="slide-emoji-row">🥤</div>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+<div class="slide slide-bg-yellow" id="p10-s08">
+  <span class="slide-num">8/8</span>
+  <div class="slide-title">DOMINGO<br>REPETE O FAVORITO</div>
+  <div class="slide-emoji-row">😋</div>
+  <span class="slide-cta">kingfood.online</span>
+  <div class="slide-logo">KING <span class="kf-yellow">FOOD</span></div>
+</div>
+
+</body>
+</html>
